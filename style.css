@@ -95,6 +95,11 @@ input, select {
 
 /* End of Reset Stylesheet */
 
+@font-face {
+    src: url(/consola.ttf);
+    font-family: con;
+}
+
 * {
     text-decoration: none;
 }
@@ -115,15 +120,15 @@ header {
 }
 
 header .header-brand {
-    font-family: 'Rubik', sans-serif;
+    font-family: con,'Rubik', sans-serif;
     font-size: 25px;
     font-weight: 400;
-    color: #9cdcfe;
+    color: #00ffff;
     display: block;
     margin: 0 auto;
     text-align: center;
     padding: 20px 0px;
-    letter-spacing: 2px;
+    letter-spacing: 0px;
     
 }
 
@@ -142,22 +147,22 @@ header nav ul li{
 }
 
 header nav ul li a{
-    font-family: 'Rubik', sans-serif;
+    font-family: con,'Rubik', sans-serif;
     font-size: 20px;
     font-weight: 400;
     color: rgb(255, 255, 255);
 }
 
 .wrapper h2.intro {
-    font-family: 'Rubik', sans-serif;
+    font-family: con,'Rubik', sans-serif;
     font-weight: 300;
     padding: 22px 0px;
-    color: rgb(255, 255, 255);
+    color: rgb(106, 255, 180);
     font-size: 50px;
 }
 
 .wrapper p {
-    font-family: 'Rubik', sans-serif;
+    font-family: con,'Rubik', sans-serif;
     font-weight: 300;
     padding: 0px;
     color: rgb(255, 255, 255);
@@ -165,7 +170,7 @@ header nav ul li a{
 }
 
 .wrapper h2.blog {
-    font-family: 'Rubik', sans-serif;
+    font-family: con,'Rubik', sans-serif;
     font-weight: 300;
     padding: 50px 0 0 0;
     color: rgb(255, 255, 255);
