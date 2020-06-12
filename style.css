@@ -131,7 +131,7 @@ body {
     float: left;
     display: block;
     font-size: 30px;
-    margin-left: 5%;
+    /* margin-left: 5%; */
     padding: 12px;
 }
 
@@ -223,7 +223,7 @@ body {
         clear:none;
         float:right;
         max-height: none;
-        padding-right: 5%;
+        /* padding-right: 5%; */
     }
     .header .menu-icon{
         display: none;
