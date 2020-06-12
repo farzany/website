@@ -102,6 +102,7 @@ input, select {
 
 * {
     text-decoration: none;
+    
 }
 
 .wrapper {
@@ -110,71 +111,123 @@ input, select {
 }
 
 body {
+    margin: 0;
     background-color: #242424;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
+.header {
     background-color: #2e2e2e;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+    position: fixed;
     width: 100%;
-    height: 100px;
+    z-index: 3;
 }
 
-header .header-brand {
-    font-family: con,'Rubik', sans-serif;
-    font-size: 25px;
+.header .header-brand {
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    color: #00ffff;
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px 0px;
-    letter-spacing: 0px;
-    
-}
-
-header nav ul{
-    width: fit-content;
-    margin: 0 auto;
-    display: block;
-
-}
-
-header nav ul li{
+    color: #37e1ff;
     float: left;
+    display: block;
+    font-size: 30px;
+    margin-left: 5%;
+    padding: 12px;
+}
+
+.header ul {
+    margin: 0;
+    padding: 0;
     list-style: none;
-    padding: 0px 16px;
-
+    overflow: hidden;
+    background-color:  #2e2e2e;
 }
-
-header nav ul li a{
-    font-family: con,'Rubik', sans-serif;
+.header ul a{
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
     font-size: 20px;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
+}
+.header ul a:hover{
+    background-color: rgb(82, 82, 82);
 }
 
-.wrapper h2.intro {
-    font-family: con,'Rubik', sans-serif;
-    font-weight: 300;
-    padding: 22px 0px;
-    color: rgb(106, 255, 180);
-    font-size: 50px;
-}
-
-.wrapper p {
-    font-family: con,'Rubik', sans-serif;
-    font-weight: 300;
-    padding: 0px;
-    color: rgb(255, 255, 255);
-    font-size: 16px;
-}
-
-.wrapper h2.blog {
-    font-family: con,'Rubik', sans-serif;
-    font-weight: 300;
-    padding: 50px 0 0 0;
-    color: rgb(255, 255, 255);
-    font-size: 50px;
+.header .menu {
+    clear:both;
+    max-height: 0;
     text-align: center;
+    transition: max-height .2s ease-out;
+}
+.header .menu-icon {
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.header .menu-icon .nav-icon {
+    background: white;
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+.header .menu-icon .nav-icon:before{
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: 5px;
+}
+.header .menu-icon .nav-icon:after{
+    background: white;
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    top: -5px;
+}
+.header .menu-btn {
     display: none;
 }
+.header .menu-btn:checked ~ .menu {
+    max-height: 240px;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon {
+    background: transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before {
+    transform: rotate(-45deg);
+    top: 0;
+    
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+@media (min-width:48em) {
+    .header li {
+        float: left;
+    }
+    .header li a {
+        padding: 20px 30px;
+    }
+    .header .menu {
+        clear:none;
+        float:right;
+        max-height: none;
+        padding-right: 5%;
+    }
+    .header .menu-icon{
+        display: none;
+    }
+}
+
+
