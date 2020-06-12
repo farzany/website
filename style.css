@@ -131,8 +131,8 @@ body {
     float: left;
     display: block;
     font-size: 30px;
-    /* margin-left: 5%; */
-    padding: 12px;
+    margin-left: 5%;
+    padding: 14px;
 }
 
 .header ul {
@@ -212,7 +212,7 @@ body {
     top: 0;
 }
 
-@media (min-width:48em) {
+@media only screen and (min-width:768px) {
     .header li {
         float: left;
     }
@@ -223,7 +223,7 @@ body {
         clear:none;
         float:right;
         max-height: none;
-        /* padding-right: 5%; */
+        padding-right: 5%;
     }
     .header .menu-icon{
         display: none;
