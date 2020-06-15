@@ -4,9 +4,14 @@
     text-decoration: none;
 }
 
+html {
+    min-height: 100%;
+}
+
 body {
     background-color: white;
     font-family: 'Rubik', sans-serif;
+    height: 100%;
 }
 
 .header {
@@ -122,10 +127,13 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 14vh;
     position: relative;
-    top: 10vh;
     width: 90%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 72vh;
+    padding-bottom: 4vh;
 }
 
 .wrapper section {
@@ -189,7 +197,7 @@ body {
 }
 
 .wrapper section.download div a {
-    background-color: rgb(207, 245, 255);
+    background-color: rgb(185, 241, 255);
     border: none;
     display: block;
     float: left;
@@ -202,6 +210,20 @@ body {
     text-align: center;
     padding: 15px 0 15px 0;
     font-weight: 500;
+    transition: background-color .2s linear;
+}
+
+.wrapper section.download div a:hover {
+    background-color: rgb(122, 239, 255);
+}
+
+.footer {
+    position: relative;
+    display: block;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(27, 27, 27);
 }
 
 
@@ -228,7 +250,6 @@ body {
     .wrapper section {
         width: 97%;
         margin: 1.5%;
-        
     }
 
     .wrapper section h2 {
@@ -254,6 +275,18 @@ body {
 
     .wrapper section.download div a {
         font-size: 20px;
+    }
+
+    .wrapper div.download-all {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 95%;
+    }
+
+    .wrapper section.download {
+        padding: 0;
+        margin: 0 0 20px 0;
     }
 
 }
