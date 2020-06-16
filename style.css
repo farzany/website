@@ -220,6 +220,7 @@ body {
     padding: 15px 0 15px 0;
     font-weight: 500;
     transition: background-color .2s linear;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .wrapper section.download div a:hover {
