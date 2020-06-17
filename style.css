@@ -180,6 +180,20 @@ body {
     margin: 0;
 }
 
+.wrapper section.white {
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.wrapper section.white div h2, .wrapper section.white div p {
+    color: rgb(27, 27, 27);
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    width: 100%;
+}
+
+
 .wrapper section.download h2 {
     color: rgb(80, 235, 255);
     padding: 10px 0 5px 0;
@@ -225,7 +239,6 @@ body {
     transition: background-color .2s linear;
 }
 
-
 .footer {
     position: absolute;
     bottom: 0;
@@ -264,8 +277,8 @@ body {
     }
 
     .wrapper section {
-        width: 97%;
-        margin: 1.5%;
+        width: 94%;
+        margin: 1.5% 3%;
     }
 
     .wrapper section h2 {
