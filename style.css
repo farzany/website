@@ -281,7 +281,7 @@ body {
     }
 
     .wrapper section.download {
-        width: 350px;
+        width: 250px;
         margin: 0 2.5% 20px 2.5%;
     }
 
@@ -291,6 +291,8 @@ body {
 
     .wrapper section.download div a {
         font-size: 20px;
+        width: 90%;
+        margin: 10px auto;
     }
 
     .wrapper div.download-all {
@@ -307,6 +309,11 @@ body {
 
     .wrapper section.download div a:hover {
         background-color: rgb(122, 239, 255);
+    }
+
+    .wrapper section.download div {
+        display: flex;
+        flex-direction: column;
     }
 
 }
