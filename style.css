@@ -262,10 +262,36 @@ body {
     box-shadow: 0 0 6px black;
 }
 
-.wrapper section.blog h2, .wrapper section.blog p {
+.wrapper section.blog div {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.wrapper section.blog p {
     color: rgb(27, 27, 27);
-    font-weight: 400;
     line-height: 1.5em;
+}
+
+.wrapper section.blog h2 {
+    color: rgb(27, 27, 27);
+    padding: 0 0 0 20px;
+}
+
+.wrapper section.blog #date {
+    line-height: 100%;
+    margin: auto 0;
+    padding: 0 20px 0 20px;
+    text-align: center;
+}
+
+.wrapper a#contact {
+    position: absolute;
+    left: 0;
+    top: -18vh;
 }
 
 .footer {
@@ -357,6 +383,7 @@ body {
         display: flex;
         flex-direction: column;
     }
+
 
 }
 
