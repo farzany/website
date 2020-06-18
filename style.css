@@ -252,6 +252,22 @@ body {
     font-size: 18px;
 }
 
+.wrapper section.blog {
+    background-color: transparent;
+    background-image: url(/paper.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    box-shadow: 0 0 6px black;
+}
+
+.wrapper section.blog h2, .wrapper section.blog p {
+    color: rgb(27, 27, 27);
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
