@@ -13,11 +13,11 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
+                <li><a class="uncheck" href="index.html">Home</a></li>
+                <li><a class="uncheck" href="about.html">About Me</a></li>
+                <li><a class="uncheck" href="projects.html">Projects</a></li>
+                <li><a class="uncheck" href="index.html#contact-top">Contact</a></li>
+                <li><a class="uncheck" href="downloads.html">Downloads</a></li>
             </ul>
         </nav>
         <div class="wrapper">
@@ -65,6 +65,18 @@
         AOS.init({
             duration: 1000,
         });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".check").click(function(){
+            $("#menu-btn").prop("checked", true);
+        });
+        $(".uncheck").click(function(){
+            $("#menu-btn").prop("checked", false);
+        });
+    });
     </script>
 
     </body>

@@ -11,14 +11,14 @@
     <body>
         <nav class="header">
             <a href="index.html" class="header-brand">Farzan Yaz</a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="downloads.html">Downloads</a></li>
+                <li><a class="uncheck" href="index.html">Home</a></li>
+                <li><a class="uncheck" href="about.html">About Me</a></li>
+                <li><a class="uncheck" href="projects.html">Projects</a></li>
+                <li><a class="uncheck" href="#contact-top">Contact</a></li>
+                <li><a class="uncheck" href="downloads.html">Downloads</a></li>
             </ul>
         </nav>
         <div class="wrapper">
@@ -29,20 +29,25 @@
                     <p>Take a look around!</p>
                 </div>
             </section>
+            <section class="white" style="margin-top: 0;">
+                <div>
+                    <a id="resume" href="#">Resume</a>
+                </div>
+            </section>
             <section>
                     <h2>Hello!</h2>
                     <p>Welcome to my site! This is my first ever website and it's being done from scratch using HTML and CSS. </p> <p> It is currently under construction, and some of the content may be out of place! </p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus asperiores odit cum tempora possimus, nobis accusamus veniam dicta ab quis nihil dolorum mollitia molestias nesciunt expedita earum facilis sapiente repellendus!</p>
             </section>
-            <section data-aos="fade-up">
+            <section id="contact-top" data-aos="fade-up">
                     <h2>Hello!</h2>
                     <p>Welcome to my site! This is my first ever website and it's being done from scratch using HTML and CSS. </p> <p> It is currently under construction, and some of the content may be out of place! </p>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus asperiores odit cum tempora possimus, nobis accusamus veniam dicta ab quis nihil dolorum mollitia molestias nesciunt expedita earum facilis sapiente repellendus!</p>
             </section>
-            <section data-aos="fade-up"> 
-                    <h2>Hello!</h2>
-                    <p>Welcome to my site! This is my first ever website and it's being done from scratch using HTML and CSS. </p> <p> It is currently under construction, and some of the content may be out of place! </p>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus asperiores odit cum tempora possimus, nobis accusamus veniam dicta ab quis nihil dolorum mollitia molestias nesciunt expedita earum facilis sapiente repellendus!</p>
+            <section id="contact" data-aos="fade-up"> 
+                    <h2>Contact</h2>
+                    <p>farzan.yazdanjou@gmail.com</p>
+                    <p>LinkedIn</p>
             </section>
             <section data-aos="fade-up">
                     <h2>Hello!</h2>
@@ -64,6 +69,18 @@
         AOS.init({
             duration: 1000,
         });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $(".check").click(function(){
+            $("#menu-btn").prop("checked", true);
+        });
+        $(".uncheck").click(function(){
+            $("#menu-btn").prop("checked", false);
+        });
+    });
     </script>
 
     </body>

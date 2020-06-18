@@ -239,6 +239,19 @@ body {
     transition: background-color .2s linear;
 }
 
+.wrapper a#resume {
+    background-color: rgb(27, 27, 27);
+    display: block;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 18px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
