@@ -1,3 +1,5 @@
+/* Main Containers */
+
 * {
     margin: 0 auto;
     padding: 0;
@@ -21,7 +23,6 @@ body {
     position: relative;
 }
 
-
 .wrapper {
     margin: 14vh 5% 0 5%;
     position: relative;
@@ -32,6 +33,8 @@ body {
     padding-bottom: 14vh;
     display: block;
 }
+
+/* Navigation Header */
 
 .header {
     background-color: rgb(34, 34, 34);
@@ -75,6 +78,8 @@ body {
 .header ul a:hover {
     background-color: rgb(44, 44, 44);
 }
+
+/* Navigation Header Burger */
 
 .header .menu {
     clear:both;
@@ -148,6 +153,8 @@ body {
     top: 0px;
 }
 
+/* The Default Section Styling */
+
 .wrapper section {
     background-color:rgb(27, 27, 27);
     display: block;
@@ -160,7 +167,6 @@ body {
     overflow: hidden;
     float: left;
 }
-
 
 .wrapper section h2 {
     color: white;
@@ -180,6 +186,8 @@ body {
     margin: 0;
 }
 
+/* Section styling for transparent background */
+
 .wrapper section.white {
     background-color: transparent;
     border-radius: 0;
@@ -193,6 +201,7 @@ body {
     width: 100%;
 }
 
+/* Section styling for defualt download links */
 
 .wrapper section.download h2 {
     color: rgb(80, 235, 255);
@@ -250,7 +259,10 @@ body {
     line-height: 50px;
     color: white;
     font-size: 18px;
+    padding-bottom: 2px;
 }
+
+/* The defaul styling for blog posts */
 
 .wrapper section.blog {
     background-color: transparent;
@@ -288,11 +300,58 @@ body {
     text-align: center;
 }
 
-.wrapper a#contact {
+/* Anchor styling so that the section
+appears in the middle of the screen */
+
+.wrapper a#connect {
     position: absolute;
     left: 0;
     top: -18vh;
 }
+
+/* Social Media Buttons */
+
+.wrapper div.social-btns {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 1vw;
+    border-radius: 50%;
+}
+  
+.fa:hover {
+      opacity: 0.7;
+}
+  
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #800064;
+    color: white;
+}
+
+.fa-github {
+    background: #1d1d1d;
+    color: white;
+}
+
+/* Footer */
 
 .footer {
     position: absolute;
@@ -304,10 +363,18 @@ body {
 
 .footer p {
     color: rgb(134, 134, 134);
-    font-size: 18px;
+    font-size: 16px;
     line-height: 10vh;
-    width: 100%;
+    width: fit-content;
     text-align: center;
+    position: relative;
+    margin: 0;
+    float: left;
+    padding: 0 40px;
+}
+
+.footer a {
+    color: rgb(196, 196, 196);
 }
 
 
@@ -384,7 +451,9 @@ body {
         flex-direction: column;
     }
 
-
+    .footer p {
+        font-size: 18px;
+    }
 }
 
 @media only screen and (min-width:500px) {
