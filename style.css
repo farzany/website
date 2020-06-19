@@ -370,7 +370,7 @@ appears in the middle of the screen */
     position: relative;
     margin: 0;
     float: left;
-    padding: 0 40px;
+    padding: 0 4vw;
 }
 
 .footer a {
