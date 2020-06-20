@@ -184,6 +184,7 @@ body {
     font-weight: 400;
     width: fit-content;
     margin: 0;
+    line-height: 1.5em;
 }
 
 /* Section styling for transparent background */
@@ -193,7 +194,7 @@ body {
     border-radius: 0;
 }
 
-.wrapper section.white div h2, .wrapper section.white div p {
+.wrapper section.white div.text h2, .wrapper section.white div.text p {
     color: rgb(27, 27, 27);
     padding-left: 0;
     padding-right: 0;
@@ -262,7 +263,7 @@ body {
     padding-bottom: 2px;
 }
 
-/* The defaul styling for blog posts */
+/* The default styling for blog posts */
 
 .wrapper section.blog {
     background-color: transparent;
@@ -285,7 +286,6 @@ body {
 
 .wrapper section.blog p {
     color: rgb(27, 27, 27);
-    line-height: 1.5em;
 }
 
 .wrapper section.blog h2 {
@@ -299,6 +299,21 @@ body {
     padding: 0 20px 0 20px;
     text-align: center;
 }
+
+/* About me page */
+
+.about-me {
+    display: grid;
+    column-gap: 3vw;
+    row-gap: 2vh;
+    grid-template-columns: 1fr;
+    grid-auto-rows: min-content;
+}
+
+
+/* Default styling for images */
+
+
 
 /* Anchor styling so that the section
 appears in the middle of the screen */
