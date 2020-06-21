@@ -303,13 +303,23 @@ body {
 /* About me page */
 
 .about-me {
-    display: grid;
     column-gap: 3vw;
     row-gap: 2vh;
     grid-template-columns: 1fr;
     grid-auto-rows: min-content;
 }
 
+.about-me .white .text p {
+    padding-bottom: 0;
+}
+
+/* Hobbies section and icons */
+
+.wrapper .hobbies h2 {
+    width: 100%;
+    padding: 20px 0 10px 0;
+    text-align: center;
+}
 
 /* Default styling for images */
 
@@ -356,7 +366,7 @@ appears in the middle of the screen */
     color: white;
 }
 
-.fa-instagram {
+.fa.fa-instagram {
     background: #800064;
     color: white;
 }
