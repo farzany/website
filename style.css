@@ -302,18 +302,17 @@ body {
 
 /* About me page */
 
-.about-me {
-    column-gap: 3vw;
-    row-gap: 2vh;
-    grid-template-columns: 1fr;
-    grid-auto-rows: min-content;
-}
-
 .about-me .white .text p {
     padding-bottom: 0;
 }
 
 /* Hobbies section and icons */
+
+.wrapper .hobbies {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+}
 
 .wrapper .hobbies h2 {
     width: 100%;
@@ -431,13 +430,14 @@ appears in the middle of the screen */
     .wrapper section h2 {
         color: white;
         padding: 20px 20px 10px 20px;
-        font-size: 35px;
+        font-size: 30px;
     }
     
     .wrapper section p {
         color: white;
         padding: 0 20px 20px 20px;
-        font-size: 20px;
+        font-size: 19px;
+        font-weight: 400;
     }
 
     .wrapper section.download {
@@ -481,8 +481,18 @@ appears in the middle of the screen */
     }
 }
 
-@media only screen and (min-width:500px) {
+@media only screen and (min-width:1000px) {
+    .wrapper .hobbies {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 10px;
+    }
+    
+}
 
+@media only screen and (min-width:500px) and (max-width:1000px) {
+    .wrapper .hobbies {
+        margin-top: 0;
+    }
 }
 
 
