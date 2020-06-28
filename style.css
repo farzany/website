@@ -267,7 +267,7 @@ body {
 
 .wrapper section.blog {
     background-color: transparent;
-    background-image: url(/paper.jpg);
+    background-image: url(images/paper.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -300,24 +300,27 @@ body {
     text-align: center;
 }
 
-/* About me page */
+/* About Me page */
 
 .about-me .white .text p {
     padding-bottom: 0;
 }
 
-/* Hobbies section and icons */
-
 .wrapper .hobbies {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-auto-rows: minmax(min-content, min-content);
 }
 
 .wrapper .hobbies h2 {
     width: 100%;
     padding: 20px 0 10px 0;
     text-align: center;
+}
+
+a#photography {
+    color: rgb(255, 128, 128);
+    text-decoration: underline;
 }
 
 /* Default styling for images */
