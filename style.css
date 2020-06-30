@@ -24,9 +24,9 @@ body {
 }
 
 .wrapper {
-    margin: 14vh 5% 0 5%;
+    margin: 14vh 2.5% 0 2.5%;
     position: relative;
-    width: 90%;
+    width: 95%;
     height: 100%;
     overflow: hidden;
     min-height: 72vh;
@@ -294,6 +294,9 @@ a.download:hover {
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-rows: minmax(min-content, min-content);
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
 }
 
 .wrapper .hobbies h2 {
@@ -437,11 +440,21 @@ appears in the middle of the screen */
 }
 
 @media only screen and (min-width:1000px) {
+    .wrapper {
+        margin: 14vh 10% 0 10%;
+        position: relative;
+        width: 80%;
+        height: 100%;
+        overflow: hidden;
+        min-height: 72vh;
+        padding-bottom: 14vh;
+        display: block;
+    }
+
     .wrapper .hobbies {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 10px;
     }
-    
 }
 
 @media only screen and (min-width:500px) and (max-width:1000px) {
