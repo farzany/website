@@ -14,7 +14,7 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color:white;
     font-family: 'Rubik', sans-serif;
     height: 100%;
     max-width: 100%;
@@ -218,7 +218,7 @@ a.download {
     font-size: 17px;
     color: rgb(0, 0, 0);
     line-height: 2em;
-    background-color: rgb(145, 255, 255);
+    background-color: rgb(181, 255, 255);
     padding: 0 10px;
     width: 100%;
     border-radius: 20px;
@@ -305,9 +305,8 @@ a.download:hover {
     text-align: center;
 }
 
-a#photography {
+a.general {
     color: rgb(255, 128, 128);
-    text-decoration: underline;
 }
 
 /* Default styling for images */
