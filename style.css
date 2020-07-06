@@ -194,7 +194,7 @@ body {
     border-radius: 0;
 }
 
-.wrapper section.white div.text h2, .wrapper section.white div.text p {
+.wrapper section.white div.text h2, .wrapper section.white div.text h1, .wrapper section.white div.text p {
     color: rgb(27, 27, 27);
     padding-left: 0;
     padding-right: 0;
