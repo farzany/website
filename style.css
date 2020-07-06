@@ -168,7 +168,7 @@ body {
     float: left;
 }
 
-.wrapper section h2 {
+.wrapper section h2, .wrapper section h1 {
     color: white;
     padding: 20px 20px 10px 20px;
     font-size: 25px;
