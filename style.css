@@ -54,7 +54,7 @@ body {
     display: table-cell;
     float: left;
     line-height: 4vh;
-    padding: 3vh 21px;
+    padding: 3vh 20px 3vh 3vh;
     -webkit-tap-highlight-color: transparent;
 }
 
