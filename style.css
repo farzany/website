@@ -1,14 +1,4 @@
 /* Main Containers */
-
-@viewport {
-    width: device-width;
-    zoom: 1;
-}
-
-@-ms-viewport {
-    width: device-width ;
-}
-
 * {
     margin: 0 auto;
     padding: 0;
@@ -64,7 +54,7 @@ body {
     display: table-cell;
     float: left;
     line-height: 4vh;
-    padding: 3vh 25px;
+    padding: 3vh 22px;
     -webkit-tap-highlight-color: transparent;
 }
 
