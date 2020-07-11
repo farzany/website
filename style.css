@@ -64,7 +64,7 @@ body {
     display: table-cell;
     float: left;
     line-height: 4vh;
-    padding: 3vh;
+    padding: 3vh 25px;
     -webkit-tap-highlight-color: transparent;
 }
 
