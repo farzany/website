@@ -59,6 +59,10 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+.header .short-text {
+    display: none;
+}
+
 .header ul {
     list-style: none;
     overflow: hidden;
@@ -464,7 +468,14 @@ appears in the middle of the screen */
         margin-top: 0;
     }
 }
-
+@media only screen and (max-width:950px) {
+    .header .short-text {
+        display: block;
+    }
+    .header .full-text {
+        display: none;
+    }
+}
 
 
 
