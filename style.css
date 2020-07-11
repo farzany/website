@@ -403,7 +403,7 @@ appears in the middle of the screen */
 }
 
 
-@media only screen and (min-width:800px) {
+@media only screen and (min-width:825px) {
     .header li {
         float: left;
     }
@@ -476,7 +476,14 @@ appears in the middle of the screen */
         display: none;
     }
 }
-
+@media only screen and (min-width:500px) and (max-width:825px) {
+    .header .short-text {
+        display: none;
+    }
+    .header .full-text {
+        display: block;
+    }
+}
 
 
 
