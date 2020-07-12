@@ -1,2 +1,2 @@
 # Synopsis
-This repository is a static personal [website](https://www.farzanyaz.com "Live Version").
+This repository is a responsive, static personal [website](https://www.farzanyaz.com "Live Version").
