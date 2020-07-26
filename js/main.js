@@ -12,3 +12,12 @@ $(document).ready(function(){
 AOS.init({
     duration: 1000,
 });
+
+// Resume Currently Unavailable
+let resume = document.getElementById("resume");
+resume.onclick = function () {
+    resume.innerHTML = "Currently Unavailable"
+    setTimeout(function () {
+        resume.innerHTML = "Resume"
+    },1500);
+}

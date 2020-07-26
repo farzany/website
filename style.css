@@ -174,7 +174,8 @@ body {
 .wrapper section h2, .wrapper section h1 {
     color: white;
     padding: 20px 20px 10px 20px;
-    font-size: 25px;
+    /* font-size: 25px; */
+    font-size: calc(25px + (30 - 25) * ((100vw - 360px) / (825 - 360)));
     font-weight: 500;
     width: fit-content;
     margin: 0;
@@ -183,7 +184,8 @@ body {
 .wrapper section p {
     color: white;
     padding: 0 20px 20px 20px;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: calc(17px + (19 - 17) * ((100vw - 360px) / (825 - 360)));
     font-weight: 400;
     width: fit-content;
     margin: 0;
@@ -226,7 +228,8 @@ body {
 
 a.download {
     display: block;
-    font-size: 17px;
+    /* font-size: 17px; */
+    font-size: calc(17px + (19 - 17) * ((100vw - 360px) / (825 - 360)));
     color: rgb(0, 0, 0);
     line-height: 2em;
     background-color: rgb(181, 255, 255);
@@ -247,15 +250,19 @@ a.download:hover {
 .wrapper a#resume {
     background-color: rgb(27, 27, 27);
     display: block;
-    width: 200px;
+    width: 160px;
+    min-width: fit-content;
     height: 50px;
     margin: 0 auto;
+    padding: 0 20px;
     border-radius: 25px;
     text-align: center;
     line-height: 50px;
     color: white;
-    font-size: 18px;
-    padding-bottom: 2px;
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+} .wrapper a#resume:active {
+    content: "Currently Unavailable";
 }
 
 /* The default styling for blog posts */
@@ -319,8 +326,54 @@ a.general {
     color: rgb(255, 128, 128);
 }
 
-/* Default styling for images */
+/* Default styling for Multi-Media sections */
 
+.wrapper section.multi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper section.multi div.multi {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.wrapper section.multi img {
+    padding: 15px 5% 20px 0px;
+    display: block;
+    width:150px;
+    margin: auto;
+}
+
+.wrapper section.multi div.text {
+    margin: 0;
+}
+
+.wrapper section p.subtitle {
+    line-height: 1em;
+    padding-right: 0;
+}
+
+.wrapper section.multi h2 {
+    padding-right: 0;
+
+}
+
+/* Projects */
+
+.wrapper section.projects {
+    background-color: transparent;
+    margin: 0;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.wrapper section.project {
+    max-width: 450px;
+}
 
 
 /* Anchor styling so that the section
@@ -386,7 +439,8 @@ appears in the middle of the screen */
 
 .footer p {
     color: rgb(134, 134, 134);
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: calc(16px + (18 - 16) * ((100vw - 360px) / (825 - 360)));
     line-height: 1vh;
     width: fit-content;
     text-align: center;
