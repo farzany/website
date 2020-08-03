@@ -324,40 +324,84 @@ a.download:hover {
 
 a.general {
     color: rgb(255, 128, 128);
+    cursor: pointer;
+}
+/* Images */
+
+img.modal-icon {
+    width: 50px;
+    padding: 12px 0 10px 0 ;
 }
 
-/* Default styling for Multi-Media sections */
+/* Modal Styling */
 
-.wrapper section.multi {
+.modal-bg {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s, backdrop-filter 0.5s;
 }
 
-.wrapper section.multi div.multi {
+.modal-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    position: relative;
+    background-color: white;
+    min-height: 50%;
+    height: fit-content;
+    width: 91.5%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-bg .modal h2, .modal-bg .modal p {
+    color: rgb(27, 27, 27);
+    padding: 0;
+} .modal-bg .modal h2 {
+    font-size: calc(25px + (30 - 25) * ((100vw - 360px) / (825 - 360)));
+} .modal-bg .modal p {
+    padding: 10px 20px 0 20px;
+    font-size: calc(17px + (19 - 17) * ((100vw - 360px) / (825 - 360)));
+}
+
+.modal-bg .modal div.call-to-action {
+    height: fit-content;
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
-}
-
-.wrapper section.multi img {
-    padding: 15px 5% 20px 0px;
+    justify-content: space-evenly;
+} .modal-bg .modal a {
+    padding: 20px;
+    font-size: 18px;
     display: block;
-    width:150px;
-    margin: auto;
+    color: crimson;
+    font-weight: 500;
 }
 
-.wrapper section.multi div.text {
-    margin: 0;
-}
-
-.wrapper section p.subtitle {
-    line-height: 1em;
-    padding-right: 0;
-}
-
-.wrapper section.multi h2 {
-    padding-right: 0;
-
+.modal .modal-close {
+    position: absolute;
+    padding: 10px 15px;
+    margin: 5px 5px;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    font-size: 25px;
 }
 
 /* Projects */
@@ -369,10 +413,34 @@ a.general {
     height: fit-content;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border-radius: 0px;
 }
 
 .wrapper section.project {
-    max-width: 450px;
+    width: 95%;
+    cursor: pointer;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.wrapper section.project h2 {
+    padding: 15px 10px 5px 10px;
+    color: rgb(0, 255, 234);
+    width: 100%;
+    line-height: 1em;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.wrapper section.project p {
+    line-height: 1.2em;
+    padding: 0px 20px 14px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
 }
 
 
@@ -455,6 +523,15 @@ appears in the middle of the screen */
     color: rgb(196, 196, 196);
 }
 
+@media only screen and (min-width:500px) {
+    .wrapper section.project {
+        min-width: 300px;
+        width: fit-content;
+        max-width: 500px;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+}
 
 @media only screen and (min-width:825px) {
     .header li {
@@ -477,13 +554,11 @@ appears in the middle of the screen */
     }
 
     .wrapper section h2 {
-        color: white;
         padding: 20px 20px 10px 20px;
         font-size: 30px;
     }
     
     .wrapper section p {
-        color: white;
         padding: 0 20px 20px 20px;
         font-size: 19px;
         font-weight: 400;
@@ -495,6 +570,14 @@ appears in the middle of the screen */
 
     .footer p, .footer h2.footer {
         font-size: 18px;
+    }
+
+    .modal-bg .modal h2 {
+        font-size: 30px;
+    } .modal-bg .modal p {
+        font-size: 18px;
+    } .modal-bg .modal a {
+        width: 50%;
     }
 }
 

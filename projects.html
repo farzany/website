@@ -30,8 +30,47 @@
         <div class="wrapper">
             <section class="white intro">
                 <div class="text">
-                    <h2>Coming Soon!</h2>
+                    <h2>Projects</h2>
+                    <p>These are some of the projects I have worked on! Click on the slates to read more about the projects and get useful links.</p>
                 </div>
+            </section>
+            <section class="projects">
+
+                <section class="project modal-btn" id="blackjack" onclick="ModalOpen(this)">
+                    <h2>Blackjack</h2>
+                    <p>My first ever JavaScript game!</p>
+                </section>
+
+                <section class="project modal-btn" id="location-history" onclick="ModalOpen(this)">
+                    <h2>Location History Stats</h2>
+                    <p>Analysing Google Location History data with Python</p>
+                </section>
+
+                <div class="modal-bg location-history">
+                    <div class="modal">
+                        <img src="/images/gmaps.png" alt="Google Maps Icon" class="modal-icon">
+                        <span class="modal-close">&times</span>
+                        <h2>Location History Stats</h2>
+                        <p>Stats are always fun - especially when they're about your every-day life. Wondering to myself about how far I've travelled by bus since starting at McMaster, I decided to create a python program that would estimate information such as that. Taking easily-downloadable Google account data, this program sifts through numerous json files and tallies up the distances travelled in every seperate trip, and the corresponding means of travel. Read about how it works on Github!</p>
+                        <div class="call-to-action">
+                            <a href="https://github.com/farzany/google-location-stats#readme" class="general" target="__blank">View on Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-bg blackjack">
+                    <div class="modal">
+                        <img src="/images/honor_heart-14.png" alt="Playing Cards" class="modal-icon" style="width: 90px;">
+                        <span class="modal-close">&times</span>
+                        <h2>Blackjack</h2>
+                        <p>While initially learning JavaScript, I decided to put what I had learnt to the test and create a simple Blackjack game. Starting a project like this was a way for me to really dive into the language and discover things for myself. It was also a chance for me to do some front-end design with CSS. The gameplay is slightly slowed down to create a semi-organic flow. I hope you enjoy my casual game!</p>
+                        <div class="call-to-action">
+                            <a href="/blackjack/blackjack.html" class="general" target="__blank">Play Game</a>
+                            <a href="https://github.com/farzany/google-location-stats" class="general" target="__blank">View on Github</a>
+                        </div>
+                    </div>
+                </div>
+
             </section>
         </div>
         
@@ -47,7 +86,6 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-    <script src="js/test.js"></script>
         
     </body>
 </html>
