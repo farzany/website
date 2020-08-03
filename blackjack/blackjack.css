@@ -5,13 +5,13 @@ body {
 }
 
 .wrapper.blackjack {
-    margin: 14vh 5% 0 5%;
+    margin: 4vh 5% 0 5%;
     position: relative;
     width: 90%;
     height: 100%;
     overflow: hidden;
     min-height: 72vh;
-    padding-bottom: 0;
+    padding-bottom: 15vh;
     display: block;
 }
 
@@ -238,6 +238,10 @@ body {
 /* Footer is disabled below 1000px screen width  */
 
 .footer {
+    display: block;
+}
+
+nav.header {
     display: none;
 }
 
@@ -246,7 +250,7 @@ body {
 
 @media only screen and (min-width:500px) {
     .wrapper.blackjack {
-        margin: 14vh auto 0 auto;
+        margin: 4vh auto 0 auto;
         max-width: 500px;
     }
 }
@@ -256,7 +260,12 @@ body {
         display: block;
     }
 
+    nav.header {
+        display: block;
+    }
+
     .wrapper.blackjack {
+        margin: 14vh auto;
         padding-bottom: 14vh;
     }
 
