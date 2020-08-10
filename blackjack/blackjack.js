@@ -1,7 +1,23 @@
+// Preloading the deck for smoother transitions (1.3mb)
+var preload = new Array();
+const deck = [2,3,4,5,6,7,8,9,10,"J","Q","K","A"];
+const symbol = ["H","D","C","S"];
 
+for (i = 0; i < deck.length; i++) {
+    for (j = 0; j < symbol.length; j++) {
+        preload.push("deck/" + deck[i] + symbol[j] + ".png");
+    }
+}
+
+var loadedimages = new Array();
+for(var k=0; k<preload.length; k++) {
+    loadedimages[k] = new Image();
+    loadedimages[k].src = preload[k];
+}
 
 
 playBlackjack();
+
 
 function playBlackjack() {
     // Declaring all of the clickable buttons and displays
