@@ -499,6 +499,11 @@ appears in the middle of the screen */
     color: white;
 }
 
+.fa-youtube-play {
+    background: #ff0000;
+    color: white;
+}
+
 /* Footer */
 
 .footer {
