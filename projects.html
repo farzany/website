@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Hello! I'm Farzan Yazdanjou, a McMaster Software Engineering Student, and these are the projects I've worked on!">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="/images/favicon.png">
+	<head>
+		<title>Projects</title>
+		<meta charset="UTF-8">
+        <meta name="description" content="Hello! I'm Farzan Yazdanjou, a McMaster Software Engineering Student, and these are some of my projects!">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/png" href="images/favicon.png">
     </head>
-    <body>
+	<body class="projects">
         <nav class="header">
             <a href="index.html">
                 <h2 class="header-brand">
@@ -17,85 +20,62 @@
                 <span class="short-text">Farzan Yaz.</span>
                 </h2>
             </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
                 <li><a class="uncheck" href="index.html">Home</a></li>
-                <li><a class="uncheck" href="about.html">About Me</a></li>
+                <li><a class="uncheck" href="index.html#about">About Me</a></li>
                 <li><a class="uncheck" href="projects.html">Projects</a></li>
                 <li><a class="uncheck" href="index.html#connect">Connect</a></li>
-                <li><a class="uncheck" href="downloads.html">Downloads</a></li>
+                <li><a class="uncheck" href="resources.html">Resources</a></li>
             </ul>
         </nav>
-        <div class="wrapper">
-            <section class="white intro">
-                <div class="text">
-                    <h2>Projects</h2>
-                    <p>These are some of the projects I have worked on! Click on the slates to read more about the projects and get useful links.</p>
-                </div>
-            </section>
-            <section class="projects">
 
-                <section class="project modal-btn" id="blackjack" onclick="ModalOpen(this)">
-                    <h2>Blackjack</h2>
-                    <p>My first ever JavaScript game!</p>
-                </section>
-
-                <section class="project modal-btn" id="location-history" onclick="ModalOpen(this)">
-                    <h2>Location History Stats</h2>
-                    <p>Analysing Google Location History data with Python</p>
-                </section>
-
-                <section class="project modal-btn" id="instagram-bot" onclick="ModalOpen(this)">
-                    <h2>Instagram Automation</h2>
-                    <p>Automating Chrome activities with Selenium</p>
-                </section>
-
-                <div class="modal-bg location-history">
-                    <div class="modal">
-                        <img src="/images/gmaps.png" alt="Google Maps Icon" class="modal-icon">
-                        <span class="modal-close">&times</span>
-                        <h2>Location History Stats</h2>
-                        <p>Stats are always fun - especially when they're about your every-day life. Wondering to myself about how far I've travelled by bus since starting at McMaster, I decided to create a python program that would estimate information such as that. Taking easily-downloadable Google account data, this program sifts through numerous json files and tallies up the distances travelled in every seperate trip, and the corresponding means of travel. Read about how it works on Github!</p>
-                        <div class="call-to-action">
-                            <a href="https://github.com/farzany/google-location-stats#readme" class="general" target="__blank">View on Github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-bg blackjack">
-                    <div class="modal">
-                        <img src="/images/honor_heart-14.png" alt="Playing Cards" class="modal-icon" style="width: 90px;">
-                        <span class="modal-close">&times</span>
-                        <h2>Blackjack</h2>
-                        <p>While initially learning JavaScript, I decided to put what I had learnt to the test and create a simple Blackjack game. Starting a project like this was a way for me to really dive into the language and discover things for myself. It was also a chance for me to do some front-end design with CSS. The gameplay is slightly slowed down to create a semi-organic flow. I hope you enjoy my casual game!</p>
-                        <div class="call-to-action">
-                            <a href="/blackjack/blackjack.html" class="general" target="__blank">Play Game</a>
-                            <a href="https://github.com/farzany/website/tree/master/blackjack" class="general" target="__blank">View on Github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="modal-bg instagram-bot">
-                    <div class="modal">
-                        <img src="/images/instagram.png" alt="Instagram Icon" class="modal-icon">
-                        <span class="modal-close">&times</span>
-                        <h2>Instagram Automation</h2>
-                        <p>I've always loved the idea of creating programs that would complete repetitive tasks for you. One of the first programs I actually made was a bot that played BlackJack for me in a Minecraft server! I decided to learn more about Selenium and see how hard it would be to automate Instagram browsing and activities. I documented the process in a tutorial series on YouTube which now has a few thousand views!</p>
-                        <div class="call-to-action">
-                            <a href="https://www.youtube.com/watch?v=IHDuqZXagfA&list=PLJ1Kwz9QyeL_K0prd-fniwZ1EjEkJjByY&ab_channel=FarzanYaz" class="general" target="__blank">View on YouTube</a>
-                            <a href="https://github.com/farzany/insta-bot-tutorial#instagram-bot-tutorial" class="general" target="__blank">View on Github</a>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
+        <div class="eclipses">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="a" draggable="false">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="b" draggable="false">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="z" draggable="false">
         </div>
-        
-    <div class="footer">
-        <p>Farzan Yazdanjou - 2021</p>
-        <p style="position: absolute; right: 0;">View on <a href="https://github.com/farzany/website#user-content-synopsis" target="_blank">GitHub</a></p>
-    </div>
+
+        <section class="default projects" data-aos="fade-up">
+            <h2>Projects</h2>
+            <p>I've displayed a few of my projects on this website! These projects have been to help me learn different programming languages and concepts through a hands-on experience. I have also included school-related projects that I found impressive :)</p>
+        </section>
+        <section class="slates default" data-aos="fade-up">
+            <div class="slate" id="blackjack">
+                <h2>JS/CSS: Blackjack</h2>
+                <p>While initially learning JavaScript, I decided to put what I had learnt to the test and create a simple Blackjack game. This was a way for me to really dive into the language and discover things for myself. It was also a chance for me to do some front-end design with CSS.</p>
+                <!-- <p id="date">Month Day, Year</p> -->
+                <a href="https://github.com/farzany/website/tree/master/blackjack#jscss-blackjack" id="git">GitHub</a>
+                <a href="blackjack/blackjack.html" id="demo">Play Game</a>
+            </div>
+            <div class="slate" id="insta-bot">
+                <h2>Python: Chrome Automation</h2>
+                <p>I decided to learn about Python's Selenium and see how hard it would be to automate Instagram browsing and activities. I documented the process in a tutorial series on YouTube which now has a few thousand views!</p>
+                <!-- <p id="date">Month Day, Year</p> -->
+                <a href="https://github.com/farzany/insta-bot-tutorial" target="_blank" id="git">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=IHDuqZXagfA&list=PLJ1Kwz9QyeL_K0prd-fniwZ1EjEkJjByY&index=1" target="_blank" id="demo">YouTube Playlist</a>
+            </div>
+            <div class="slate" id="#">
+                <h2>Java: 2048 McMaster Project</h2>
+                <p>This was the final project for McMaster University's 2AA4 course of Winter 2021. It is a professionally-designed and documented 2048 game. I completed almost every bonus possible and got a project grade of 146.88%.</p>
+                <!-- <p id="date">Month Day, Year</p> -->
+                <a href="https://github.com/farzany/2048" target="_blank" id="git">GitHub</a>
+                <!-- <a href="#TODO" target="_blank" id="demo">Demo</a> -->
+            </div>
+            <div class="slate" id="#">
+                <h2>Python: Location History Analysis</h2>
+                <p>I love personal statistics - such as how steps I've taken today. I thought it would be interesting to go through the data Google Location History collects (and provides as a Zip) and tally up the distances of various modes of transportation.</p>
+                <!-- <p id="date">Month Day, Year</p> -->
+                <a href="https://github.com/farzany/google-location-stats" target="_blank" id="git">GitHub</a>
+                <!-- <a href="#TODO" target="_blank" id="demo">Demo</a> -->
+            </div>
+        </section>
+
+        <footer>
+            <p id="name">Farzan Yazdanjou ~ 2021</p>
+            <p id="git">View on <a href="https://github.com/farzany/website#synopsis" target="_blank" style="color: white;">GitHub</a></p>
+        </footer>
 
     <!-- Scripts -->
     <!-- Fade-In Fade-Out Animations -->
@@ -104,6 +84,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-        
-    </body>
+
+	</body>
 </html>
+    

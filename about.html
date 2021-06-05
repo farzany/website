@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>About Me</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="Hello! I'm Farzan Yazdanjou, a McMaster Software Engineering Student, and you can read more about me on this page!">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
+	<head>
+		<title>Farzan Yazdanjou</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/png" href="/images/favicon.png">
+		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <body>
+	<body class="about">
         <nav class="header">
             <a href="index.html">
                 <h2 class="header-brand">
@@ -18,58 +18,33 @@
                 <span class="short-text">Farzan Yaz.</span>
                 </h2>
             </a>
-            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
             <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
             <ul class="menu">
                 <li><a class="uncheck" href="index.html">Home</a></li>
                 <li><a class="uncheck" href="about.html">About Me</a></li>
                 <li><a class="uncheck" href="projects.html">Projects</a></li>
                 <li><a class="uncheck" href="index.html#connect">Connect</a></li>
-                <li><a class="uncheck" href="downloads.html">Downloads</a></li>
+                <li><a class="uncheck" href="resources.html">Resources</a></li>
             </ul>
         </nav>
-        <div class="wrapper about-me">
-            <section class="white intro">
-                <div class="text">
-                    <h2>About Me</h2>
-                    <p>I am a second year student at McMaster studying software engineering. I am currently passionate about discovering and automating time-consuming, repetitive tasks. For more information about my academic career, please visit my <b><a href="https://www.linkedin.com/in/farzany/" target="__blank" class="general" style="color: teal;">LinkedIn profile</a></b></b>.</p>
-                    <br>
-                    <p>Stepping away from academics; here are some of my hobbies and interests!</p>
-                </div>
-            </section>
-            <section class="white hobbies">
-                <div>
-                    <section class="hobby" id="gaming" data-aos="fade-up">
-                        <h2>Gaming</h2>
-                        <p>Ever since I can remember, I've had a wonderful relationship with video games. I started out playing every stock Windows game on an old PC with 2mb of ram, worked my way up to Sonic on the SEGA, and once I reached Stronghold Crusader, I was hooked. I really enjoy sandbox games like Minecraft that allow me to express my creativity. I find puzzle games refreshing and helpful in breaking free of my functional fixedness. I find the social aspect of team games extremely intriuging - connecting and playing with people from across the world, allowing me to Rush B Site with a man from Russia, try to decode what a Spanish team member is trying to tell me, or even practice my Mandarine with the Chinese clan I got paired with.</p>
-                    </section>
-                    <section class="hobby" id="biking" data-aos="fade-up">
-                        <h2>Crypto</h2>
-                        <p>Ever since the early days of highschool, I've been drawn in by the thrill of the Cryptocurrency world. There was never a dull day when my friends and I were trading some new promising coin - with our "net worths" changing by the second. Reaching a cumulative balance of $50,000 just for it to crash down to $1000 the next month. Immune to feelings of regret and loss after that, we're excited to research and trade together - hoping for profit but the experience of doing it together is profit itself. 
-                    </section>
-                </div>
-                <div>
-                    <section class="hobby" id="photography" data-aos="fade-up">
-                        <h2>Photography</h2>
-                        <p>I'm not sure when my interest in photography began, however, I know that it peeked in highschool. I've always found myself in scenes and locations that yearn to be photographed, and once I purchased a decent camera, I did just that. Everywhere I go, I'll stop to take one or two photos, implementing the skills and guidelines my highschool photography course taught me. I currently display my favorite photographs that I have taken on an <a href="https://www.instagram.com/farzan.photography/" class="general" target="__blank">Instagram page</a>.</p>
-                    </section>
-                    <section class="hobby" id="memes" data-aos="fade-up">
-                        <h2>Memes</h2>
-                        <p>I mean, who doesn't like memes? Short pieces of content that make your day exceptionally better. For that reason, I set out to become a concierge of memes - stockpiling and posting memes to an <a href="https://www.instagram.com/memeshlut/" class="general" target="__blank">Instagram page</a>, just to make people smile. A fun little hobby of mine that I try to keep up with daily.</p>
-                    </section>
-                    <section class="hobby" id="editing" data-aos="fade-up">
-                        <h2>Video/Photo Editing</h2>
-                        <p>Near the start of highschool, I began working with Photoshop and Sony Vegas Pro in order to create gaming videos for Youtube. I found an interest in the softwares and began working with them outside of my "Youtube career". I have become fairly proficient in Photoshop; regularly using it to create logos, posters, and cards for many personal projects (and even a Real Estate client!). I very frequently use it to create graphics for school assignments, as well. I moved past Sony Vegas and onto Adobe Premiere which I still use regularly - editing infrequent Youtube videos, videos for school projects, and usually videos just for fun! Aside from a gaming channel, I also started a <a href="https://www.youtube.com/channel/UCvrcJLLb73nSfFRurmGUQuQ" class="general" target="__blank">YouTube channel</a> for sharing my programming and academic experiences with the world!</p>
-                    </section>
-                </div>
-               
-            </section>
+
+        <div class="eclipses">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="a" draggable="false">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="b" draggable="false">
+            <img src="images/eclipse.svg" alt="" class="eclipse" id="z" draggable="false">
         </div>
-    
-    <div class="footer">
-        <p>Farzan Yazdanjou - 2021</p>
-        <p style="position: absolute; right: 0;">View on <a href="https://github.com/farzany/website#user-content-synopsis" target="_blank">GitHub</a></p>
-    </div>
+
+        <section class="default about" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>I am a second year student at McMaster University studying Software Engineering. I am currently passionate about discovering and automating time-consuming, repetitive tasks. For more information about my academic career, please visit my <a href="#" class="in-text">LinkedIn profile</a>.<br><br>Aside from programming, I of course have many hobbies and interests! With nearly 3000 hours on CSGO alone, I think I qualify as a Gamer©. I even took a crack at becoming a Minecraft YouTuber back in Highschool, which must add a few (imaginary) points to my Gamer-ness. I also love photography - taking shots of sceneries, people, food, plants, buildings, and anything else I stumble upon! I post the highlights on my photography <a href="#" class="in-text">Instagram page</a>. Another great hobby of mine is biking, which helps me stay in shape, relax, and find cool stuff to take photographs of. I currently ride a Marlin Trek 5. Along with my love for biking, I'm also passionate about bodybuilding! I definitely have a 7'4", 250lb of pure-muscle physique with 35" diameter biceps. No pictures, you just gotta trust me. As one does, I also have a passion for memes - so much so that I started my own <a href="#" class="in-text">Instagram meme page</a> a while back.<br><br> Since the start of that YouTube Minecraft career I mentioned, I've spent countless days learning Photoshop, Adobe Premiere, After Effects, LucidPress, and other editing softwares. Along the way, I've learnt a lot about design and how to make good-looking posters, ads, brochures, websites, thumbnails, etc. These skills along with my programming skills have enabled me to do so much online - to the point where I've done many commisions for real businesses. These commisions include marketing material, website design and setup, business cards, programs that organize tonnes of data, and much more. I realized others may benefit from my learnings so I started a programming <a href="#" class="in-text">YouTube channel</a>, as well! Lastly, as any good Cryptocurrency connoisseur would, I must breifly mention that I do Crypto without mentioning how much money I've lost (a lot). However, I will mention that it's been very exciting and fun trading with friends :)</p>        
+        </section>
+
+
+        <footer>
+            <p id="name">Farzan Yazdanjou ~ 2021</p>
+            <p id="git">View on <a href="" style="color: white;">GitHub</a></p>
+        </footer>
 
     <!-- Scripts -->
     <!-- Fade-In Fade-Out Animations -->
@@ -78,6 +53,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
-    
-    </body>
+
+	</body>
 </html>
+    

@@ -15,6 +15,10 @@ body {
     display: block;
 }
 
+h1, h2, p, div {
+    font-family: 'Rubik', sans-serif;
+}
+
 .wrapper.blackjack section.white {
     margin: 0;
     width: 100%;
@@ -199,7 +203,7 @@ body {
     margin: 0;
     width: 22%;
     min-width: fit-content;
-    height: 7vh;
+    height: 55px;
     min-height: fit-content;
 } .wrapper.blackjack form .button:disabled {
     background-color: rgb(255, 90, 90,0.5);
@@ -212,6 +216,7 @@ body {
 .wrapper.blackjack form #place_bet {
     width: 45%;
     box-sizing: border-box;
+    height: 55px;
 } 
 
 .wrapper.blackjack form #wager_input {
@@ -228,23 +233,13 @@ body {
     padding: 10px;
     margin: 0;
     width: 50%;
-    height: 7vh;
+    height: 55px;
 } .wrapper.blackjack form #wager_input::placeholder {
     font-size: 20px;
 }
 
 .wrapper.blackjack form #new_round {
     width: 100%;
-}
-
-/* Footer is disabled below 1000px screen width  */
-
-.footer {
-    display: block;
-}
-
-nav.header {
-    display: none;
 }
 
 /* Media queries */
@@ -258,14 +253,6 @@ nav.header {
 }
 
 @media only screen and (min-height:800px), (min-width:1000px) {
-    .footer {
-        display: block;
-    }
-
-    nav.header {
-        display: block;
-    }
-
     .wrapper.blackjack {
         margin: 14vh auto 0 auto;
         padding-bottom: 14vh;
