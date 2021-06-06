@@ -278,6 +278,7 @@ body img.eclipse#a {
     top: 70vh;
     left: 49vw;
     padding-top: 20vh;
+    display: none;
 }
 
 /* Default Section Styling */
@@ -599,6 +600,10 @@ body.about section.default {
     body img.eclipse#z {
         display: none;
     } 
+    /* Arrow */
+    .arrow {
+        display: block;
+    }
 
     /* Resources Download Buttons */
     body.resources div.download-link a.default {
