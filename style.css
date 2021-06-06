@@ -362,7 +362,7 @@ div.slate {
     color: white;
     font-size: 28px;
     font-weight: 500;
-    padding: 30px 20px 20px 20px;
+    padding: 30px 20px 10px 20px;
 } div.slate p {
     font-size: 16px;
     padding: 0 20px;
@@ -379,10 +379,10 @@ div.slate {
     display: inline-block;
 } div.slate a#git {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
 } div.slate a#demo {
     position: absolute;
-    bottom: 20px;
+    bottom: 15px;
     right: 0;
 }
 
